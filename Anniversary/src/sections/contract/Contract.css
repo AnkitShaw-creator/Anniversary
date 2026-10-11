@@ -1,0 +1,381 @@
+.contract-page {
+    position: relative;
+    width: 100%;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 24px;
+    background: var(--bg, #0b0b0d);
+    color: var(--text, #f5f5f5);
+    overflow: hidden;
+}
+
+.contract-content {
+    width: min(100%, 620px);
+    text-align: center;
+}
+
+/* --------------------------------
+   HEADER
+-------------------------------- */
+
+.contract-eyebrow {
+    margin: 0 0 24px;
+    color: var(--text-muted,
+            rgba(255, 255, 255, 0.45));
+
+    font-family: var(--font-mono, monospace);
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.contract-content h1 {
+    margin: 0;
+    font-family: var(--font-display,
+            Georgia,
+            serif);
+
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.contract-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 38px 0;
+    color: #ffffff;
+}
+
+.contract-divider::before,
+.contract-divider::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.contract-divider span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+/* --------------------------------
+   BODY
+-------------------------------- */
+
+.contract-accepted {
+    width: 100%;
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(40px, 7vw, 110px);
+    padding: clamp(5px, 3vw, 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    background:var(--bg, #0b0b0d);
+}
+.accepted-content h1 {
+    margin: 0;
+    font-family: var(--font-display, Georgia, serif);
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    color: rgba(255, 255, 255, 0.94);
+}
+.accepted-photo {
+    width: 100%;
+    height: min(75vh, 700px);
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+.accepted-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.88);
+}
+
+.accepted-content {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 500px);
+    padding: 30px;
+    text-align: center;
+}
+
+.accepted-content .contract-divider {
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.contract-text {
+    max-width: 470px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.58);
+
+    font-family: var(--font-display,
+            Georgia,
+            serif);
+
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.contract-text p {
+    margin: 0 0 18px;
+}
+
+.contract-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* --------------------------------
+   QUESTION
+-------------------------------- */
+
+.contract-question {
+    margin-top: 65px;
+}
+
+.contract-question-label {
+    margin: 0 0 18px;
+
+    font-family: var(--font-mono, monospace);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.contract-question h2 {
+    margin: 0;
+
+    font-family: var(--font-display,
+            Georgia,
+            serif);
+
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.contract-question-subtitle {
+    margin: 22px 0 0;
+
+    color: rgba(255, 255, 255, 0.45);
+
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* --------------------------------
+   BUTTONS
+-------------------------------- */
+
+.contract-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 38px;
+}
+
+.contract-button {
+    width: min(100%, 300px);
+
+    padding: 14px 22px;
+
+    border-radius: 999px;
+
+    font-family: inherit;
+    font-size: 0.85rem;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.contract-button:hover {
+    transform: translateY(-2px);
+}
+
+.contract-button:active {
+    transform: scale(0.98);
+}
+
+.contract-button-primary {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    background: rgba(255, 255, 255, 0.92);
+    color: #111;
+}
+
+.contract-button-primary:hover {
+    background: #fff;
+}
+
+.contract-button-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    background: transparent;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.contract-button-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --------------------------------
+   THINKING
+-------------------------------- */
+
+.contract-thinking {
+    width: 100%;
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(40px, 7vw, 110px);
+    padding: clamp(5px, 3vw, 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    background:var(--bg, #0b0b0d);
+}
+
+.contract-thinking h1 {
+    font-size: clamp(2.8rem, 7vw, 5rem);
+}
+.thinking-photo {
+    width: 100%;
+    height: min(75vh, 700px);
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+
+.thinking-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.88);
+}
+.thinking-content {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 500px);
+    padding: 30px;
+    text-align: center;
+}
+
+.contract-text-single {
+    margin: 0 auto 38px;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--font-display,
+            Georgia,
+            serif);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* --------------------------------
+   ACCEPTED
+-------------------------------- */
+
+.accepted-details {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 10px;
+}
+
+.accepted-details p {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    margin: 0;
+    padding: 17px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-family: var(--font-display, Georgia, serif);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+.accepted-details p:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.accepted-details span {
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+}
+
+.accepted-message {
+    margin-top: 45px;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--font-display,
+            Georgia,
+            serif);
+
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+/* --------------------------------
+   MOBILE
+-------------------------------- */
+
+@media (max-width: 768px) {
+    .contract-page {
+        padding: 40px 20px;
+    }
+
+    .contract-eyebrow {
+        font-size: 0.55rem;
+        letter-spacing: 0.17em;
+    }
+
+    .contract-divider {
+        margin: 28px 0;
+    }
+
+    .contract-text {
+        font-size: 0.95rem;
+    }
+
+    .contract-question {
+        margin-top: 48px;
+    }
+
+    .contract-question h2 {
+        font-size: 2rem;
+    }
+
+    .contract-actions {
+        margin-top: 32px;
+    }
+
+    .accepted-details {
+        margin-top: 10px;
+    }
+}

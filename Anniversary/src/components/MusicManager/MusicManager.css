@@ -1,0 +1,96 @@
+.music-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+
+    background: rgba(15, 15, 18, 0.72);
+
+    color: rgba(255, 255, 255, 0.75);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    font-family: var(--font-mono, monospace);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.music-toggle:hover {
+    background: rgba(30, 30, 34, 0.9);
+
+    border-color: rgba(255, 255, 255, 0.22);
+
+    color: rgba(255, 255, 255, 0.95);
+
+    transform: translateY(-2px);
+}
+
+
+.music-toggle:active {
+    transform: translateY(0);
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Playing animation
+|--------------------------------------------------------------------------
+*/
+
+.music-playing svg {
+    animation: musicPulse 1.8s ease-in-out infinite;
+}
+
+
+@keyframes musicPulse {
+
+    0%,
+    100% {
+        opacity: 0.65;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.12);
+    }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Mobile
+|--------------------------------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+    .music-toggle {
+        right: 14px;
+        bottom: 14px;
+
+        padding: 9px 11px;
+
+        font-size: 0.58rem;
+    }
+}

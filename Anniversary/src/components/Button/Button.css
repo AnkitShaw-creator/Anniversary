@@ -1,0 +1,88 @@
+.button {
+    min-height: 52px;
+    padding: 5px 30px;
+
+    border: none;
+    border-radius: 999px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 200ms ease,
+        background 200ms ease,
+        border-color 200ms ease;
+}
+
+
+/* Primary */
+
+.button-primary {
+    background: var(--text);
+    color: var(--bg);
+}
+
+.button-primary:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* Accent */
+
+.button-accent {
+    background: #e879a6;
+    color: #ffffff;
+}
+
+.button-accent:hover {
+    background: var(--accent-soft);
+    transform: translateY(-2px);
+}
+
+
+/* Ghost */
+
+.button-ghost {
+    background: transparent;
+    color: var(--text-soft);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.button-ghost:hover {
+    border-color: rgba(255, 255, 255, 0.35);
+    color: var(--text);
+}
+
+
+/* Borderless */
+
+.button-borderless {
+    background: transparent;
+    color: var(--text-muted, rgba(255, 255, 255, 0.58));
+    font-family: var(--font-mono, monospace);
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button-borderless:hover {
+    color: var(--text);
+}
+
+
+/* Press */
+
+.button:active {
+    transform: scale(0.97);
+}

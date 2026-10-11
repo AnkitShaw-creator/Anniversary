@@ -1,0 +1,116 @@
+.wrapped-awards {
+    width: min(100%, 520px);
+    margin: 0 auto;
+    padding: clamp(80px, 14vh, 150px) 0;
+    text-align: center;
+}
+
+.wrapped-awards h2 {
+    margin: 0;
+    font-family: var(--font-display, Georgia, serif);
+    font-size: clamp(2.25rem, 8vw, 4.5rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.award-card {
+    width: 310px;
+    height: 310px;
+    box-sizing: border-box;
+    margin-top: 34px;
+    padding: clamp(28px, 8vw, 52px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at top right, rgba(255, 107, 138, 0.16), transparent 42%),
+        rgba(255, 255, 255, 0.04);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2);
+}
+
+.award-label {
+    margin: 0;
+    color: var(--text-muted, rgba(255, 255, 255, 0.55));
+    font-family: var(--font-mono, monospace);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.award-card h3 {
+    margin: 20px 0 0;
+    font-family: var(--font-display, Georgia, serif);
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    font-weight: 400;
+    line-height: 0.80;
+    display: grid;
+    place-items: center;
+}
+
+.award-description {
+    max-width: 28ch;
+    margin: 20px auto 0;
+    color: var(--text-soft, rgba(255, 255, 255, 0.72));
+    line-height: 1.6;
+}
+
+.award-controls {
+    display: grid;
+    grid-template-columns: 44px minmax(64px, auto) 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    width: min(100%, 220px);
+    margin: 24px auto 0;
+}
+.award-count {
+    flex: 0 0 auto;
+}
+
+.award-count {
+    margin: 0;
+}
+
+.award-controls button {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+
+    display: grid;
+    place-items: center;
+
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.09);
+    color: var(--text, #fff);
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.award-count {
+    min-width: 60px;
+    margin: 0;
+    color: var(--text-muted, rgba(255, 255, 255, 0.55));
+    font-family: var(--font-mono, monospace);
+    font-size: 1.2rem;
+}
+
+.award-card-stage {
+    display: grid;
+    min-height: 310px;
+    margin-top: 34px;
+    overflow: hidden;
+}
+
+.award-card-stage .award-card {
+    grid-area: 1 / 1;
+    width: 100%;
+    margin: 0;
+}

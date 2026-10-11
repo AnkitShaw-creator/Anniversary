@@ -1,0 +1,151 @@
+.dates-section {
+    width: min(100%, 620px);
+    margin: 0 auto;
+    padding: clamp(80px, 14vh, 150px) 0;
+    text-align: center;
+}
+
+.dates-section h3 {
+    margin: 0;
+    font-family: var(--font-display, Georgia, serif);
+    font-size: clamp(1rem, 2vw, 3.5rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+
+.date-card {
+    height: clamp(260px, 42vw, 320px);
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 34px;
+    padding: clamp(28px, 8vw, 48px);
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at top right,
+            rgba(232, 121, 166, 0.18),
+            transparent 45%),
+        rgba(255, 255, 255, 0.04);
+}
+
+.date-card-date {
+    margin: 0;
+    color: #e879a6;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.date-card h3 {
+    margin: 18px 0 0;
+    font-family: var(--font-display, Georgia, serif);
+    font-size: clamp(2.2rem, 9vw, 3.8rem);
+    font-weight: 400;
+    line-height: 0.95;
+}
+
+.date-card p:last-child {
+    max-width: 30ch;
+    margin: 20px auto 0;
+    color: var(--text-soft, rgba(255, 255, 255, 0.72));
+    line-height: 1.6;
+}
+
+.date-timeline {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+
+    margin: 30px 8px 0;
+}
+
+.date-timeline::before {
+    content: "";
+    position: absolute;
+    inset: 50% 2px auto;
+    height: 2px;
+
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%);
+}
+
+.timeline-dot {
+    position: relative;
+    z-index: 1;
+
+    width: 9px;
+    height: 9px;
+    flex: 0 0 9px;
+
+    padding: 0;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background: #0d0c0f;
+    cursor: pointer;
+}
+
+.timeline-dot.active {
+    width: 16px;
+    height: 16px;
+    flex-basis: 16px;
+
+    border-color: #e879a6;
+    background: #e879a6;
+    box-shadow: 0 0 18px rgba(232, 121, 166, 0.7);
+}
+
+.date-navigation {
+    display: flex;
+    grid-template-columns: 42px minmax(0, 1fr) 42px ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    margin-top: 22px;
+}
+
+.date-navigation button {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+
+    display: grid;
+    place-items: center;
+
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.09);
+    color: var(--text, #fff);
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.date-navigation button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.date-navigation p {
+    min-width: 0;
+    margin: 0;
+    color: var(--text-muted, rgba(255, 255, 255, 0.6));
+    font-family: var(--font-mono, monospace);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    line-height: 1.35;
+    text-align: center;
+    white-space: nowrap;
+}

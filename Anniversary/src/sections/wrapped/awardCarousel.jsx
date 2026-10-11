@@ -1,5 +1,5 @@
 import React from "react";
-import "./awardcarousel.css";
+import "./awardCarousel.css";
 import { wrappedAwards } from "../../data/wrapped.js";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";

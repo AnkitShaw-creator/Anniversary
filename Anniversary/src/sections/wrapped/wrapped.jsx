@@ -2,7 +2,7 @@ import React from "react";
 import "./wrapped.css";
 import StatCard from "../../components/StatCard/StatCard.jsx";
 import { wrappedStats} from "../../data/wrapped.js";
-import AwardCarousel from "./awardcarousel.jsx";
+import AwardCarousel from "./awardCarousel.jsx";
 import DateSlider from "./dateslider.jsx";
 import Button from "../../components/Button/Button.jsx";
 import { motion } from "motion/react"

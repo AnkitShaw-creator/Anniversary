@@ -25,7 +25,7 @@
     justify-content: center;
 
     margin-top: 34px;
-    padding: clamp(28px, 8vw, 48px);
+    padding: clamp(24px, 8vw, 48px);
 
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 24px;
@@ -48,63 +48,95 @@
 .date-card h3 {
     margin: 18px 0 0;
     font-family: var(--font-display, Georgia, serif);
-    font-size: clamp(2.2rem, 9vw, 3.8rem);
+    font-size: clamp(2.8rem, 4vw, 4.8rem);
     font-weight: 400;
     line-height: 0.95;
 }
+.date-card-description{
+    font-size: 1rem;
+    width: 100%;
+}
 
 .date-card p:last-child {
-    max-width: 30ch;
     margin: 20px auto 0;
     color: var(--text-soft, rgba(255, 255, 255, 0.72));
     line-height: 1.6;
 }
 
 .date-timeline {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4px;
-
-    margin: 30px 8px 0;
+    width: 100%;
+    max-width: 900px;
+    margin: 28px auto 20px;
+    padding: 12px 0;
 }
 
-.date-timeline::before {
-    content: "";
-    position: absolute;
-    inset: 50% 2px auto;
-    height: 2px;
+.timeline-range {
+    --timeline-progress: 0%;
 
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-50%);
-}
-
-.timeline-dot {
-    position: relative;
-    z-index: 1;
-
-    width: 9px;
-    height: 9px;
-    flex: 0 0 9px;
-
+    appearance: none;
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    height: 6px;
+    margin: 0;
     padding: 0;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    background: #0d0c0f;
+    border: none;
+    border-radius: 999px;
+    outline: none;
     cursor: pointer;
+
+    background: linear-gradient(to right,
+            #f472b6 0%,
+            #f472b6 var(--timeline-progress),
+            #484348 var(--timeline-progress),
+            #484348 100%);
 }
 
-.timeline-dot.active {
-    width: 16px;
-    height: 16px;
-    flex-basis: 16px;
-
-    border-color: #e879a6;
-    background: #e879a6;
-    box-shadow: 0 0 18px rgba(232, 121, 166, 0.7);
+/* Chrome, Edge, Safari */
+.timeline-range::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #f8d8e8;
+    border-radius: 50%;
+    background: #f472b6;
+    box-shadow: 0 0 14px rgba(244, 114, 182, 0.4);
+    cursor: grab;
 }
+
+.timeline-range::-webkit-slider-thumb:active {
+    cursor: grabbing;
+    transform: scale(1.12);
+}
+
+/* Firefox */
+.timeline-range::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #f8d8e8;
+    border-radius: 50%;
+    background: #f472b6;
+    box-shadow: 0 0 14px rgba(244, 114, 182, 0.4);
+    cursor: grab;
+}
+
+.timeline-range:focus-visible {
+    outline: 2px solid #f472b6;
+    outline-offset: 8px;
+}
+
+@media (max-width: 600px) {
+    .date-timeline {
+        margin: 22px auto 16px;
+        padding: 12px 4px;
+    }
+
+    .timeline-range {
+        height: 5px;
+    }
+}
+
 
 .date-navigation {
     display: flex;

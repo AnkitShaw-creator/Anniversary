@@ -258,6 +258,14 @@ export const wrappedDates = [
     },
     {
         id: "date6",
+        title: "Ghat date",
+        value: "6 - September - 2025",
+        description: "Toke Bagbazar ghat e nea geychilam aaj, tui nijer matha amar hatu te rekhe ganga dekhchilis aar ami toke. "
+            + "Then hotat we started watching clouds er shape, the shape of the cloud was like a couple kissing. "
+            + "Onnek bhoy bhoye korchilo tao I kissed you for the first time."
+    },
+    {
+        id: "date6",
         title: "Shopping Wopping ",
         value: "7 - September - 2025",
         description: "Pujor aar wardrob update er jonno shopping e geychilam amra aar tor onnek mana korar por ami toke tor chobi tolar jonno manie neachilam " +
@@ -265,9 +273,9 @@ export const wrappedDates = [
     },
     {
         id: "date7",
-        title: "Pilot",
+        title: "Bhokatta",
         value: "12 - September - 2025",
-        description: "Amader moddhe first jhamela hoe"
+        description: "Amader moddhe first jhamela hoe..."
     },
     {
         id: "date8",
@@ -295,7 +303,7 @@ export const wrappedDates = [
         title: "I need to talk to you",
         value: "18 - September - 2025",
         description: "Tor mukh theke ae kotha ta sune e amar khela ses hoe jae, sedin o same e hoechilo. "
-            + "But that day turned out to be different. We kissed for the first time."
+            + "But that day turned out to be different. We made out for the first time."
     },
     {
         id: "date12",
@@ -315,19 +323,19 @@ export const wrappedDates = [
     },
     {
         id: "date14",
-        title: "The Post-meet wala meet",
+        title: "Firing practice",
         value: "28 - September - 2025",
         description: "Amar bondhu der sathe tor first dekh. Baki ta aar bolchi naa."
     },
     {
         id: "date15",
-        title: "The Post-meet wala meet",
+        title: "Saptamir bikele amar ek bhanga cycle...",
         value: "29 - September - 2025",
         description: "Ajke Saptami, sokale sopno dekhe chilam je tor sathe naach korchi saptami bikele er gaan e XD."
     },
     {
         id: "date16",
-        title: "The Post-meet wala meet",
+        title: "Hickey scenezz",
         value: "30 - September - 2025",
         description: "Protom anjali amader sathe. Sokale ragie deachilam toke late kore, but the day tured out to be one of the best day that I have with you."
     
@@ -335,7 +343,7 @@ export const wrappedDates = [
     {
         id: "date17",
         title: "Chaa aar chini",
-        value: "2025",
+        value: "18 - October - 2025",
         description: "Tor ajke office er party chilo Kali pujor jonno. Amra kakar dokaan e masala chai ta kheychilam tokhon tui bolechilis je tui amay nijer haant er chaa banie khawabi ekdin. "
             + "Sedin ta ekhono asheni. " +"Taar sathe tui kaka ke chaa er recipe o bojhachilis. XD"
     },

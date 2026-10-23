@@ -6,7 +6,7 @@ import { PHOTO_DATA } from "../../data/imageData.js";
 import Button from "../../components/Button/Button";
 import { motion } from "motion/react";
 
-const PHOTO_PER_BATCH = 7; 
+const PHOTO_PER_BATCH = 15;
 
 export default function Photos({ onContinue }) {
   const containerRef = useRef(null);

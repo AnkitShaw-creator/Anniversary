@@ -45,8 +45,8 @@
     background-color: #f5f5f5;
     padding: 0.25rem 0 0;
     font-family: var(--font-display, Georgia, serif);
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 0.75rem;
+    line-height: 1.00rem;
     font-style: italic;
     color: #3f3f46;
 }
@@ -57,13 +57,15 @@
         width: 150px;
         padding: 0.2rem;
     }
-
+    .card-media{
+        height:100px;
+    }
     .card-video {
-        height: 140px;
+        height: 100px;
     }
 
     .card-image {
-        height: 140px;
+        height: 100px;
     }
 
     .card-caption {

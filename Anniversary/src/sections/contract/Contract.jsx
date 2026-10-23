@@ -74,7 +74,7 @@ export default function Contract({ onAccept }) {
                   <br />
                   be my girlfriend again?
                 </h2>
-
+                <p className="contract-question-subtitle"> Shall we do it again?</p>
                 <p className="contract-question-subtitle">
                   For another year.
                   <br />

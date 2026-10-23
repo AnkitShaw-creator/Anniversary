@@ -26,7 +26,7 @@ export default function Password({onSuccess}) {
     };
 
     const unlockWithPin = (enteredPin) => {
-        if (enteredPin === "111111") {
+        if (enteredPin === "261025") {
             setUnlocking(true);
 
             setTimeout(() => { 

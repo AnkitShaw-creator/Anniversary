@@ -235,6 +235,47 @@
 .wrapped-continue {
     margin-top: 32px;
 }
+.continue-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: min(280px, 80vw);
+    min-height: 48px;
+    margin-top: 28px;
+    padding: 12px 22px;
+
+    background: transparent;
+    color: #f2eee9;
+    border: 1px solid #ff6684;
+    border-radius: 30px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    cursor: pointer;
+
+    box-shadow: 0 0 18px #ff456522;
+    transition:
+        background 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.continue-button span {
+    color: #ff6684;
+    transition: transform 0.3s ease;
+}
+
+.continue-button:hover {
+    background: #ff456414;
+    border-color: #ff829a;
+    box-shadow: 0 0 28px #ff456455;
+}
+
+.continue-button:hover span {
+    transform: translateX(4px);
+}
 
 
 @media (min-width: 700px) {

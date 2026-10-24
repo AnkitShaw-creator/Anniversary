@@ -19,7 +19,7 @@ function App() {
     <>
       <section id="center">
         <MusicManager currentPage={currentPage} />
-        
+
         {currentPage === "password" && (
           <Password onSuccess={() => navigateTo("intro")} />
         )}
@@ -38,9 +38,12 @@ function App() {
         {currentPage === "contract" && (
           <Contract onContinue={() => navigateTo("finale")} />
         )}
+        {currentPage === "finale" && (
+          <Finale onContinue={() => navigateTo("finale")} />
+        )}
       </section>
     </>
-  )
+  );
 }
 
 export default App

@@ -10,7 +10,11 @@ const PAGE_PLAYLISTS = {
     "/music/Aap Jaisa Koi Meri Zindagi Mein Aaye.mp3",
     "/music/Tumi Na Thakle.mp3",
   ],
-  photos: ["/music/Hoyni Alap.mp3"],
+  photos: ["/music/Hoyni Alap.mp3",
+    "/music/Baynakhoka.mp3",
+    "/music/Ki Naame Deke Bolbo Tomake.mp3",
+    "/music/Hoyto Tomari Janya.mp3"
+  ],
   contract: ["/music/Bhalobasabasi Pachchhena.mp3"],
   finale: ["/music/Amar Bhindeshi Tara.mp3"],
 };

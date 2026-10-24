@@ -49,7 +49,7 @@ export default function Wrapped({ onContinue }) {
             <div key={stat.id} className="wrapped-stat-section">
               <StatCard
                 label={stat.label}
-                value={stat.value==="" ? <Infinity size={64} /> : stat.value}
+                value={stat.value === "" ? <Infinity size={64} /> : stat.value}
                 description={stat.description}
                 bubbleColor={stat.bubbleColor}
               />
@@ -69,23 +69,17 @@ export default function Wrapped({ onContinue }) {
             Feels like yesterday, that we started talking, both anxious, curious
             and excited at the same time.
           </h3>
-          <motion.div
-            className="button-container"
-            animate={{ scale: [1, 1.05, 1] }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity, //repeat the animation indefinitely
-              ease: "easeInOut", // Use easeInOut for smooth scaling
-              repeatDelay: 1.5, // Optional: add a delay between repeats
-            }}
+          <motion.button
+            className="continue-button"
+            onClick={onContinue}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.5, duration: 0.7 }}
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
           >
-            <Button
-              text="Continue"
-              onClick={clickContinue}
-              variant="accent"
-              disabled={false}
-            />
-          </motion.div>
+            Continue <span aria-hidden="true">→</span>
+          </motion.button>
         </section>
       </main>
     );

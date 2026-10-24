@@ -65,7 +65,7 @@ export default function AwardCarousel() {
                     <ArrowLeft />
                 </button>
                 
-                <h3 className="award-count">{activeAward + 1}/{wrappedAwards.length}</h3>
+                <p className="award-count">{activeAward + 1}/{wrappedAwards.length}</p>
                 
                 <button onClick={showNextAward} aria-label="Go back">
                     <ArrowRight />

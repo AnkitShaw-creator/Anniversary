@@ -21,8 +21,10 @@ export default function DateSlider() {
 
   return (
     <section className="dates-section">
-      <h1 className="dates-intro-section">Our Timeline</h1>
-      <h3>Dates that are just hard to forget</h3>
+      <div className="date-header">
+        <h1 className="dates-intro-section">Our Timeline</h1>
+        <h3>Sob din special holeo kichu din just bhola jae naa</h3>
+      </div>
 
       <AnimatePresence mode="wait">
         <motion.article

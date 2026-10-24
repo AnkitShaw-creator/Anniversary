@@ -3,18 +3,18 @@ import { motion, AnimatePresence } from "motion/react";
 import "./Contract.css";
 import { Heart } from "lucide-react";
 
-export default function Contract({ onAccept }) {
+export default function Contract({ onContinue }) {
     const [stage, setStage] = useState("contract");
 
     const handleAccept = () => {
       setStage("accepted");
 
-      // Small delay so she gets to see the acceptance animation
-      setTimeout(() => {
-        if (onAccept) {
-          onAccept();
-        }
-      }, 3500);
+      // // Small delay so she gets to see the acceptance animation
+      // setTimeout(() => {
+      //   if (onAccept) {
+      //     onAccept();
+      //   }
+      // }, 3500);
     };
 
     return (
@@ -35,7 +35,8 @@ export default function Contract({ onAccept }) {
               <p className="contract-eyebrow">RELATIONSHIP AGREEMENT · 002</p>
 
               <h1>
-                One year<br />
+                One year
+                <br />
                 completed.
               </h1>
 
@@ -74,7 +75,10 @@ export default function Contract({ onAccept }) {
                   <br />
                   be my girlfriend again?
                 </h2>
-                <p className="contract-question-subtitle"> Shall we do it again?</p>
+                <p className="contract-question-subtitle">
+                  {" "}
+                  Shall we do it again?
+                </p>
                 <p className="contract-question-subtitle">
                   For another year.
                   <br />
@@ -90,7 +94,8 @@ export default function Contract({ onAccept }) {
               >
                 <button
                   className="contract-button contract-button-primary"
-                  onClick={handleAccept}>
+                  onClick={handleAccept}
+                >
                   Yes, I agree{" "}
                   <Heart color="red" size=".70rem" strokeWidth="3" />
                 </button>
@@ -133,14 +138,17 @@ export default function Contract({ onAccept }) {
                 </div>
 
                 <p className="contract-text-single">
-                    No pressure.<br />
-                    This agreement isn't going anywhere.<br />
-                    Nor am I.
+                  No pressure.
+                  <br />
+                  This agreement isn't going anywhere.
+                  <br />
+                  Nor am I.
                 </p>
 
                 <button
                   className="contract-button contract-button-primary"
-                  onClick={() => setStage("contract")}>
+                  onClick={() => setStage("contract")}
+                >
                   Okay, let me reconsider...
                 </button>
               </motion.div>
@@ -196,7 +204,8 @@ export default function Contract({ onAccept }) {
                 {/* RIGHT - CONTENT */}
                 <p className="contract-eyebrow">AGREEMENT RENEWED</p>
                 <h1>It's official.</h1>
-                <br /><br />
+                <br />
+                <br />
                 <div className="contract-divider">
                   <span>
                     <Heart color="red" />
@@ -217,6 +226,24 @@ export default function Contract({ onAccept }) {
                 </div>
                 <p className="accepted-message">
                   Thank you for choosing me<br />for another year.
+                </p>
+
+                <motion.button
+                  className="finale-button"
+                  onClick={onContinue}
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.5, duration: 0.7 }}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  One last thing… <span aria-hidden="true">→</span>
+                </motion.button>
+
+                <p className="finale-button-caption">
+                  You've made it this far.
+                  <br />
+                  Let's see what's next.
                 </p>
               </motion.div>
             </motion.section>

@@ -11,7 +11,7 @@ const PAGE_PLAYLISTS = {
     "/music/Tumi Na Thakle.mp3",
   ],
   photos: ["/music/Hoyni Alap.mp3",
-    "/music/Baynakhoka.mp3",
+    "/music/Baynankhoka.mp3",
     "/music/Ki Naame Deke Bolbo Tomake.mp3",
     "/music/Hoyto Tomari Janya.mp3"
   ],

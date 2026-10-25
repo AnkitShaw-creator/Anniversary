@@ -1,4 +1,6 @@
 .contract-page {
+    --color-rose: #d58b91;
+    --color-cream: #f2e9dc;
     position: relative;
     width: 100%;
     min-height: 100svh;
@@ -6,10 +8,15 @@
     align-items: center;
     justify-content: center;
 
-    padding: 5px 10px;
+    padding: 20px 10px;
     background: var(--bg, #0b0b0d);
     color: var(--text, #f5f5f5);
     overflow: hidden;
+    background:
+            radial-gradient(ellipse at 50% 38%,
+                rgba(110, 48, 57, 0.16),
+                transparent 52%),
+            #090909;
 }
 
 .contract-content {
@@ -23,8 +30,9 @@
 
 .contract-eyebrow {
     margin: 0 0 19px;
-    color: var(--text-muted,
-            rgba(255, 255, 255, 0.45));
+    /* color: var(--text-muted,
+            rgba(255, 255, 255, 0.45)); */
+    color: var(--color-rose);
 
     font-family: var(--font-mono, monospace);
     font-size: 0.65rem;
@@ -40,8 +48,9 @@
 
     font-size: clamp(3rem, 8vw, 6rem);
     font-weight: 400;
-    line-height: 0.95;
-    letter-spacing: -0.04em;
+    line-height: 0.9;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
 }
 
 .contract-divider {
@@ -152,20 +161,18 @@
 
 .contract-question-label {
     margin: 0 0 18px;
-
     font-family: var(--font-mono, monospace);
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     letter-spacing: 0.2em;
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--color-rose);
 }
 
 .contract-question h2 {
     margin: 0;
-
     font-family: var(--font-display,
             Georgia,
             serif);
-
+    color: var(--color-cream);
     font-size: clamp(2rem, 5vw, 3.2rem);
     font-weight: 400;
     line-height: 1.1;
@@ -173,11 +180,15 @@
 
 .contract-question-subtitle {
     margin: 22px 0 0;
-
     color: rgba(255, 255, 255, 0.45);
-
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1.6;
+}
+.contract-question-subtitle em{
+    font-family: var(--font-display,
+                Georgia,
+                serif);
+    color: var(--color-cream);
 }
 
 /* --------------------------------
@@ -188,28 +199,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 14px;
-
     margin-top: 38px;
 }
 
 .contract-button {
     width: min(100%, 300px);
-
     padding: 14px 22px;
-
     border-radius: 999px;
-
     font-family: inherit;
     font-size: 0.85rem;
-
     cursor: pointer;
-
     transition:
         transform 0.2s ease,
         background 0.2s ease,
         border-color 0.2s ease;
+}
+.contract-accept-heart {
+    color: red;
+    font-size: 0.95rem;
 }
 
 .contract-button:hover {
@@ -221,10 +229,10 @@
 }
 
 .contract-button-primary {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-
+    border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.92);
     color: #111;
+    
 }
 
 .contract-button-primary:hover {
@@ -235,7 +243,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 
     background: transparent;
-    color: rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.587);
 }
 
 .contract-button-secondary:hover {

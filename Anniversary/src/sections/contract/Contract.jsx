@@ -8,13 +8,6 @@ export default function Contract({ onContinue }) {
 
     const handleAccept = () => {
       setStage("accepted");
-
-      // // Small delay so she gets to see the acceptance animation
-      // setTimeout(() => {
-      //   if (onAccept) {
-      //     onAccept();
-      //   }
-      // }, 3500);
     };
 
     return (
@@ -35,9 +28,9 @@ export default function Contract({ onContinue }) {
               <p className="contract-eyebrow">RELATIONSHIP AGREEMENT · 002</p>
 
               <h1>
-                One year
+                One Year
                 <br />
-                completed.
+                Completed.
               </h1>
 
               <div className="contract-divider">
@@ -71,13 +64,14 @@ export default function Contract({ onContinue }) {
                 <p className="contract-question-label">THE QUESTION</p>
 
                 <h2>
-                  Would you like to
-                  <br />
-                  be my girlfriend again?
+                  <em>
+                    Would you like to
+                    <br />
+                    be my girlfriend again?
+                  </em>
                 </h2>
                 <p className="contract-question-subtitle">
-                  {" "}
-                  Shall we do it again?
+                  <em>Shall we do it again?</em>
                 </p>
                 <p className="contract-question-subtitle">
                   For another year.
@@ -96,8 +90,10 @@ export default function Contract({ onContinue }) {
                   className="contract-button contract-button-primary"
                   onClick={handleAccept}
                 >
-                  Yes, I agree{" "}
-                  <Heart color="red" size=".70rem" strokeWidth="3" />
+                  <span>Yes, I agree</span>
+                  <span className="contract-accept-heart" aria-hidden="true">
+                    ♥
+                  </span>
                 </button>
 
                 <button
@@ -225,7 +221,9 @@ export default function Contract({ onContinue }) {
                   </p>
                 </div>
                 <p className="accepted-message">
-                  Thank you for choosing me<br />for another year.
+                  Thank you for choosing me
+                  <br />
+                  for another year.
                 </p>
 
                 <motion.button

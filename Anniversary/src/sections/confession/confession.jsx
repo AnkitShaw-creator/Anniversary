@@ -1,53 +1,80 @@
-import {useState} from 'react';
-import {motion} from 'motion/react';
-import './confession.css';
-import { PHOTO_DATA } from "../../data/imageData.js";
-import Button from "../../components/Button/Button";
-import { ArrowRight } from "lucide-react";
+import { motion } from "motion/react";
+import { Heart, Play } from "lucide-react";
+import "./confession.css";
 
-export default function Confession({ onContinue }) {
-    const clickContinue = () => {
-      onContinue();
-    };
+// Put the video in public/videos, or pass videoSrc as a prop.
+const DEFAULT_VIDEO_SRC = "https://cdn.dbimg.app/vo5bfH7B.mp4";
 
+export default function Confession({
+  onContinue,
+  videoSrc = DEFAULT_VIDEO_SRC,
+}) {
+  return (
+    <main className="confession-page">
+      <motion.section
+        className="confession-content"
+        initial={{ opacity: 0, y: 22 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <p className="confession-eyebrow">Confession</p>
 
-    return (
-      <main className="confession-container">
-        <section className="confession-section">
-          <motion.article className="confession-content">
-            <video
-              src="/videos/test.mp4"
-              className="card-video"
-              controls
-              download="false"
-              sound="true"
-              playsInline
-              preload="metadata"
-              onPointerDown={(e) => {
-                e.stopPropagation();
-              }}
-            />
-            <p className="confession-title">A little note for you</p>
-          </motion.article>
-        </section>
+        <h1 className="confession-title">
+          A little note
+          <br />
+          <em>for You.</em>
+        </h1>
+
+        <div className="confession-divider" aria-hidden="true">
+          <span />
+          <Heart size={15} fill="currentColor" />
+          <span />
+        </div>
+
+        <p className="confession-intro">
+          No perfect words, just me — and everything I’ve been wanting to say.
+        </p>
+
         <motion.div
-          className='confession-button'
-          animate={{
-            scale: [1, 1.05, 1],
-          }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+          className="confession-video-frame"
+          initial={{ opacity: 0, scale: 0.985 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.25, duration: 0.8 }}
         >
-          <Button
-            text="Continue"
-            children={<ArrowRight color="#e879a6" strokeWidth={1} />}
-            onClick={clickContinue}
-            variant="borderless"
-          />
+          <video
+            className="confession-video"
+            controls
+            playsInline
+            preload="metadata"
+            aria-label="A personal anniversary video note"
+          >
+            <source src={videoSrc} />
+            Your browser does not support embedded videos.
+          </video>
+
+          {/* <div className="confession-video-caption" aria-hidden="true">
+            <Play size={12} fill="currentColor" />
+            <span>TAKE YOUR TIME</span>
+          </div> */}
         </motion.div>
-      </main>
-    );
+
+        <p className="confession-footnote">
+          Whenever you’re ready, press play.
+        </p>
+
+        <motion.button
+          className="confession-continue"
+          type="button"
+          onClick={onContinue}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          <span>Continue</span>
+          <span className="confession-continue-heart" aria-hidden="true">
+            ♥
+          </span>
+        </motion.button>
+      </motion.section>
+    </main>
+  );
 }

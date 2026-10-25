@@ -7,10 +7,10 @@
 .date-header h1{
     margin: 0;
     font-family: var(--font-display, Georgia, serif);
-    font-size: clamp(3.5rem, 12vw, 8.5rem);
+    font-size: clamp(3rem, 10vw, 7rem);
     font-weight: 400;
     line-height: 0.95;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.05em;
 }
 .date-header h3{
     margin: 0;
@@ -69,8 +69,8 @@
     line-height: 0.95;
 }
 .date-card-description{
-    font-size: 1rem;
-    width: 100%;
+    font-size: 0.8rem;
+    width: 80%;
 }
 
 .date-card p:last-child {

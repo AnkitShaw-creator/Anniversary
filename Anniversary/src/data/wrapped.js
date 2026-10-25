@@ -29,7 +29,7 @@ export const wrappedStats = [
     {
         id: "annoyed",
         label: "Days I annoyed you",
-        value: 365,
+        value: 360,
         bubbleColor: shuffledColors[1],
         description: "Damn, I pissed you off a lottttt this year. :)"
     },
@@ -38,7 +38,7 @@ export const wrappedStats = [
         label: "Dates",
         value: 52,
         bubbleColor: shuffledColors[2],
-        description: "Date is just a day in calendar, but with you, every day is a date."
+        description: "With you every day is a date."
     },
     {
         id: "hugs",
@@ -94,14 +94,14 @@ export const wrappedStats = [
         label: "Movie Nights",
         value: 22,
         bubbleColor: shuffledColors[10],
-        description: "NOt gonna lie, you have a great taste in movies."
+        description: "Not gonna lie, you have a great taste in movies."
     },
     {
         id: "songs",
         label: "Songs shared",
         value: 35,
         bubbleColor: shuffledColors[11],
-        description: "NOt gonna lie, you have a great taste in movies."
+        description: "Having similar taste in music is a blessing"
     },
     {
         id: "notalkdays",
@@ -131,13 +131,13 @@ export const wrappedAwards = [
         id: "wordsbyyou",
         title: "Most used word by you",
         value: "Chodash Naa",
-        description: "Thanks bole e bolle e bolish"
+        description: "Thanks bolle e toke bolte hoe"
     },
     {
         id: "mostSharedMeal",
         title: "Most Shared Meal",
         value: "Pucchka",
-        description: "Karon pucchka holo tor indhon aar amar o"
+        description: "Karon pucchka holo tor indhon aar amader praan"
     },
     {
         id: "mostVisitedPlace",
@@ -155,7 +155,7 @@ export const wrappedAwards = [
         id: "mostLovedBand",
         title: "Most Loved Band",
         value: "Chandrabindoo",
-        description: "Era e amader Bhrohma"
+        description: "Era e amader Brohma"
     },
     {
         id: "favouritethingtodoyou",
@@ -213,14 +213,14 @@ export const wrappedDates = [
         id: "date1",
         title: "Pilot",
         value: "18 - August - 2025",
-        description: "The day it all started. It still feels like yesterday that we started talking. "+ 
-            "I will always remember what you said that day."
+        description: "The day it all started. It still feels like yesterday that we started talking. "
+            + " Ajker din ta joldi ghumie geyli, kintu porer din theke khela suru"
     },
     {
         id: "date2",
         title: "What is your mobile number?",
         value: "24 - August - 2025",
-        description: "That day we started talking on whatsapp. And seidin e raate tui amay bolechilis je amra jae sathe khai ses amay korte hobe..." +
+        description: "That day we started talking on whatsapp, jani onnek lojja paachilam karon aeta expected chilo naa. And seidin e raate tui amay bolechilis je amra jae sathe khai ses amay korte hobe... " +
             "I think we can rule that out."
     },
     {

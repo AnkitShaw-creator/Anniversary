@@ -32,7 +32,7 @@ export default function Photos({ onContinue }) {
         <div className="background-text-content">
           <h1>YEAR'S SCRAPBOOK</h1>
           <h3>
-            The Moments We Shared.<br /> The Bond we Built.
+            <em>The Moments We Shared. The Bond We Built.</em>
           </h3>
         </div>
       </section>
@@ -63,7 +63,7 @@ export default function Photos({ onContinue }) {
             text="More Memories"
             children={<ArrowRight color="#e879a6" strokeWidth={1} />}
             onClick={showNextBatch}
-            variant="borderless"
+            variant="radientborder"
           />
         </motion.div>
       ) : (
@@ -82,7 +82,7 @@ export default function Photos({ onContinue }) {
             text="Continue"
             children={<ArrowRight color="#e879a6" strokeWidth={1} />}
             onClick={clickContinue}
-            variant="borderless"
+            variant="radientborder"
           />
         </motion.div>
       )}

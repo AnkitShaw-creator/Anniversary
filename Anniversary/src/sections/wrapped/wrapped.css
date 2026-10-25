@@ -9,6 +9,11 @@
 
     background: var(--bg, #0b0b0d);
     color: var(--text, #f8f5f0);
+    background:
+            radial-gradient(ellipse at 50% 38%,
+                rgba(110, 48, 57, 0.16),
+                transparent 52%),
+            #090909;
 }
 
 /* Each part becomes one screen-sized story moment */
@@ -217,7 +222,7 @@
 }
 
 .wrapped-ending {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     padding: clamp(72px, 14vh, 150px) 0 16px;
     text-align: center;
@@ -227,8 +232,8 @@
     margin: 0;
     color: var(--text, rgba(255, 255, 255, 0.58));
     font-family: var(--font-display, Georgia, serif);
-    font-size: clamp(1.4rem, 5vw, 3.5rem);
-    font-weight: 200;
+    font-size: clamp(1.2rem, 5vw, 3.3rem);
+    font-weight: 100;
     line-height: 0.75;
 }
 

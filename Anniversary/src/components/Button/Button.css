@@ -81,6 +81,30 @@
 }
 
 
+/* Radiant with border*/
+.button-radientborder{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.82rem 1.35rem;
+    color: #f3e8dc;
+    background: rgba(213, 139, 145, 0.11);
+    border: 1px solid rgba(213, 139, 145, 0.45);
+    border-radius: 999px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    transition:
+        background 180ms ease,
+        border-color 180ms ease;
+}
+.button-radientborder:hover{
+    background: rgba(213, 139, 145, 0.2);
+    border-color: rgba(213, 139, 145, 0.75);
+}
+
+
 /* Press */
 
 .button:active {

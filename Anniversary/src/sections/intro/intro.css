@@ -1,4 +1,6 @@
 .wrapper-container {
+    --confession-rose: #d58b91;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,10 +13,10 @@
     
 
     background:
-        radial-gradient(circle at 50% 45%,
-            rgba(232, 124, 124, 0.08),
-            transparent 45%),
-        var(--bg);
+            radial-gradient(ellipse at 50% 38%,
+                rgba(110, 48, 57, 0.16),
+                transparent 52%),
+            #090909;
 }
 
 .button-container {
@@ -28,4 +30,8 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+.intro-text em{
+    color: var(--confession-rose)
 }

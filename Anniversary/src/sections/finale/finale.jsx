@@ -18,7 +18,7 @@ export default function Finale() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-            END OF YEAR: 001
+          END OF YEAR: 001
         </motion.p>
 
         <motion.h1
@@ -27,9 +27,9 @@ export default function Finale() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          This is only
+          To a new
           <br />
-          the beginning.
+          beginning.
         </motion.h1>
 
         <div className="finale-divider">

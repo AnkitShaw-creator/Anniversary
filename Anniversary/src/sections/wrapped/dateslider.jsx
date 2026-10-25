@@ -23,7 +23,9 @@ export default function DateSlider() {
     <section className="dates-section">
       <div className="date-header">
         <h1 className="dates-intro-section">Our Timeline</h1>
-        <h3>Sob din special holeo kichu din just bhola jae naa</h3>
+        <h3>
+          <em>Sob din special holeo kichu din just bhola jae naa</em>
+        </h3>
       </div>
 
       <AnimatePresence mode="wait">

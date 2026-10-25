@@ -1,4 +1,6 @@
 .finale-page {
+    --color-rose: #d58b91;
+    --color-cream: #f2e9dc;
     min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
@@ -7,8 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 55px 24px;
+    padding: 30px 24px;
     overflow: hidden;
+    align-content: center;
+    background:
+            radial-gradient(ellipse at 50% 38%,
+                rgba(110, 48, 57, 0.16),
+                transparent 52%),
+            #090909;
 }
 
 .finale-content {
@@ -23,15 +31,14 @@
     font-family: var(--font-mono, monospace);
     font-size: 0.65rem;
     letter-spacing: 0.22em;
-    color: var(--text-muted,
-                rgba(255, 255, 255, 0.45));
+    color: var(--color-rose);
     margin: 0 0 24px;
 }
 
 .finale-heading {
     font-family: Georgia, "Times New Roman", serif;
     font-weight: 400;
-    font-size: clamp(1.5rem, 6vw, 3.5rem);
+    font-size: clamp(1.5rem, 6vw, 4.5rem);
     letter-spacing: -1.8px;
     line-height: 0.98;
     margin: 0;
@@ -73,7 +80,6 @@
 .finale-photo-frame img {
     display: block;
     width: 100%;
-    zoom: -20%;
     aspect-ratio: 4 / 6;
     object-fit: cover;
     background: #282020;
@@ -93,7 +99,7 @@
     transform: rotate(-2deg);
     text-align: left;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 12px;
+    font-size: 10px;
     font-style: italic;
     line-height: 1.35;
 }
@@ -106,7 +112,7 @@
 .finale-letter-heart {
     text-align: right;
     color: #a33c40;
-    font-size: 19px;
+    font-size: 24px;
     margin-top: 3px;
 }
 

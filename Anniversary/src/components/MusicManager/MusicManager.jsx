@@ -105,7 +105,7 @@ export default function MusicManager({ currentPage }) {
   */
 
   const fadeIn = (audio) => {
-    if (!audio || isMuted) return;
+    if (!audio) return;
 
     clearFade();
 
@@ -323,11 +323,10 @@ export default function MusicManager({ currentPage }) {
     /*
     Otherwise start music
     */
-
     setIsMuted(false);
 
     try {
-      audio.volume = 0;
+      audio.volume = 1;
       await audio.play();
       setIsPlaying(true);
       fadeIn(audio);

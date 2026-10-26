@@ -66,8 +66,10 @@ export default function Wrapped({ onContinue }) {
 
         <section className="wrapped-ending" id="wrapped-ending">
           <h3>
-            Feels like yesterday, that we started talking, both anxious, curious
-            and excited at the same time.
+            <em>
+              Feels like yesterday, that we started talking, both anxious,
+              curious and excited at the same time.
+            </em>
           </h3>
           <motion.button
             className="continue-button"

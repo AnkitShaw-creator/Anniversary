@@ -22,7 +22,7 @@ export default function Confession({
         <h1 className="confession-title">
           A little note
           <br />
-          <em>for You.</em>
+          <em>from me to You.</em>
         </h1>
 
         <div className="confession-divider" aria-hidden="true">
@@ -32,7 +32,7 @@ export default function Confession({
         </div>
 
         <p className="confession-intro">
-          No perfect words, just me — and everything I’ve been wanting to say.
+          No perfect words, just ami — aar amar moner kichu kotha jeta toke bolte chaitam.
         </p>
 
         <motion.div
@@ -52,14 +52,10 @@ export default function Confession({
             Your browser does not support embedded videos.
           </video>
 
-          {/* <div className="confession-video-caption" aria-hidden="true">
-            <Play size={12} fill="currentColor" />
-            <span>TAKE YOUR TIME</span>
-          </div> */}
         </motion.div>
 
         <p className="confession-footnote">
-          Whenever you’re ready, press play.
+          Whenever you’re ready.
         </p>
 
         <motion.button

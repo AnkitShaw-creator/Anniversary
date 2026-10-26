@@ -7,8 +7,9 @@ const PAGE_PLAYLISTS = {
   password: [],
   intro: [],
   wrapped: [
-    "/music/Aap Jaisa Koi Meri Zindagi Mein Aaye.mp3",
+    "/music/Geet Gobindo.mp3",
     "/music/Tumi Na Thakle.mp3",
+    '/music/TUMI.mp3'
   ],
   photos: ["/music/Hoyni Alap.mp3",
     "/music/Baynankhoka.mp3",

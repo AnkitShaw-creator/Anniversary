@@ -513,113 +513,119 @@ export const PHOTO_DATA = [
     {
         id: 86,
         type: "image",
+        url: "https://cdn.dbimg.app/GXkPVmcv.webp",
+        title: "Sob kichu ek side e, aar amra onno side e"
+    },
+    {
+        id: 87,
+        type: "image",
         url: "https://cdn.dbimg.app/IytvjoWZ.webp",
         title: "(In Sinchan style) Ab mein itna bhi kuch kash nahi hun"
     },
     {
-        id: 87,
+        id: 88,
         type: "image",
         url: "https://cdn.dbimg.app/DiOptK3u.webp",
         title: "Signing a pact to always pose weirdly with you"
     },
     {
-        id: 88,
+        id: 89,
         type: "image",
         url: "https://cdn.dbimg.app/BPONCBZC.webp",
         title: "Kidnap kore nebo toke"
     },
     {
-        id: 89,
+        id: 90,
         type: "video",
         url: "https://cdn.dbimg.app/h4S47WGF.mp4",
         title: "Two babies in a frame"
     },
     {
-        id: 90,
+        id: 91,
         type: "image",
         url: "https://cdn.dbimg.app/7Y9B8kIi.webp",
         title: "Greatest achievement of my life"
     },
     {
-        id: 91,
+        id: 92,
         type: "video",
         url: "https://cdn.dbimg.app/pZKYiSgX.mp4",
         title: "Ranna bhalo lagle Like Share and Subscribe korben"
     },
     {
-        id: 92,
+        id: 93,
         type: "video",
         url: "https://cdn.dbimg.app/q9StN2lH.mp4",
         title: "Pujo Bhi-log-ing"
     },
     {
-        id: 93,
+        id: 94,
         type: "video",
         url: "https://cdn.dbimg.app/8qGWgmO3.mp4",
         title: "Mandatory Pujo Shooting practice"
     },
     {
-        id: 94,
+        id: 95,
         type: "image",
         url: "https://cdn.dbimg.app/cEnkbwFe.webp",
         title: "Kyuki Pal Pal dilke paas Tum rehti ho"
     },
     {
-        id: 95,
+        id: 96,
         type: "image",
         url: "https://cdn.dbimg.app/azKAEazb.webp",
         title: "Even the flower knows you are the pretty one"
     },
     {
-        id: 96,
+        id: 97,
         type: "image",
         url: "https://cdn.dbimg.app/9JONLk8v.webp",
         title: "Erom e sob pujo jeno sathe kate amader"
     },
     {
-        id: 97,
+        id: 98,
         type: "video",
         url: "https://cdn.dbimg.app/QVDvGI9G.mp4",
         title: "Twitorialll"
     },
     {
-        id: 98,
+        id: 99,
         type: "video",
         url: "https://cdn.dbimg.app/PeuLBZ6M.mp4",
         title: "Am I fit for the Fit check wala moment"
     },
     {
-        id: 99,
+        id: 100,
         type: "video",
         url: "https://cdn.dbimg.app/VPEXIXFg.mp4",
         title: "Crabby Crabby crab"
     },
     {
-        id: 100,
+        id: 101,
         type: "image",
         url: "https://cdn.dbimg.app/nYwNiKbO.webp",
         title: "I want you always by my side and I promise to do the same as well"
     },
     {
-        id: 101,
+        id: 102,
         type: "video",
         url: "https://cdn.dbimg.app/Ss7GrYp5.mp4",
         title: "Keep taking photos so I could photo bomb you"
     },
     {
-        id: 102,
+        id: 103,
         type: "image",
         url: "https://cdn.dbimg.app/URJbZRxa.webp",
         title: "Thanks for blessing my life"
     },
     {
-        id: 103,
+        id: 104,
         type: "image",
         url: "https://cdn.dbimg.app/C2mLgg3q.webp",
         title: "With you, Always, No matter what"
     },
     {
-        id: 104,
+        id: 105,
         type: "image",
         url: "https://cdn.dbimg.app/6ZJRW2Uk.webp",
         title: "To another pujo together and many more to come."

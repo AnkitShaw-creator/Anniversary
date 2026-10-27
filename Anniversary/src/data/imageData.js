@@ -181,7 +181,7 @@ export const PHOTO_DATA = [
     },
     {
         id: 31,
-        type: "video",
+        type: "image",
         url: "https://cdn.dbimg.app/jEcwo8zY.webp",
         title: "A new beginning"
     },
@@ -199,7 +199,7 @@ export const PHOTO_DATA = [
     },
     {
         id: 34,
-        type: "video",
+        type: "image",
         url: "https://cdn.dbimg.app/op1fcGio.webp",
         title: "When the bells were jingling"
     },
